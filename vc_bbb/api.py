@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from indico.web.flask.util import url_for
 
 def get_url(command, params):
-    from indico_vc_bbb.plugin import BigBlueButtonPlugin
+    from vc_bbb.plugin import BigBlueButtonPlugin
     secret = BigBlueButtonPlugin.settings.get('bbb_secret')
     api_link = BigBlueButtonPlugin.settings.get('bbb_api_link')
     request = command + params + secret

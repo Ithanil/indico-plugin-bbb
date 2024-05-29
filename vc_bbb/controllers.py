@@ -34,7 +34,7 @@ from indico.modules.vc.exceptions import VCRoomError
 
 from indico.modules.vc.models.vc_rooms import VCRoomEventAssociation
 
-from indico_vc_bbb.api import get_create_meeting_url, get_join_url, is_meeting_running, get_recordings, get_delete_recording_url, set_publish_recording_url
+from vc_bbb.api import get_create_meeting_url, get_join_url, is_meeting_running, get_recordings, get_delete_recording_url, set_publish_recording_url
 
 class RHStartAndJoin(RHDisplayEventBase):
     def _process_args(self):

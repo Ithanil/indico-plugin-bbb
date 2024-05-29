@@ -20,7 +20,7 @@ from indico.web.forms.base import IndicoForm, generated_data
 from indico.util.i18n import _
 from indico.web.forms.fields import PrincipalListField, EditableFileField, IndicoPasswordField
 
-from indico_vc_bbb.util import retrieve_principal, get_slides_metadata
+from vc_bbb.util import retrieve_principal, get_slides_metadata
 
 class PluginSettingsForm(VCPluginSettingsFormBase):
     bbb_api_link = URLField(_('API endpoint'), [DataRequired()],

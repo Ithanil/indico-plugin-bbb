@@ -1,0 +1,302 @@
+# Germany translations for indico-plugin-bbb.
+# Copyright (C) 2024 Jan Kessler <jakessle@t-online.de>
+# This file is distributed under the same license as the project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-05-31 10:58+0100\n"
+"PO-Revision-Date: 2024-05-31 10:58+0100\n"
+"Last-Translator: Jan Kessler <jakessle@t-online.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: vc_bbb/controllers.py:82
+msgid "Cannot create room"
+msgstr "Raum konnte nicht erstellt werden"
+
+#: vc_bbb/controllers.py:90 vc_bbb/controllers.py:145
+msgid "You are not allowed to modify {} rooms for this event."
+msgstr "Sie sind nicht berechtigt {} Räume für dieses Event zu ändern."
+
+#: vc_bbb/controllers.py:128
+msgid "File too large"
+msgstr "Datei zu groß"
+
+#: vc_bbb/controllers.py:135
+msgid "File list updated"
+msgstr "Liste der Dateien aktualisiert"
+
+#: vc_bbb/controllers.py:158
+msgid "Recording deleted"
+msgstr "Aufzeichnung gelöscht"
+
+#: vc_bbb/controllers.py:160
+msgid "Recording not deleted"
+msgstr "Aufzeichnung nicht gelöscht"
+
+#: vc_bbb/forms.py:27
+msgid "API endpoint"
+msgstr "API Endpunkt"
+
+#: vc_bbb/forms.py:28
+msgid ""
+"URL returned by \"bbb-conf --secret\", E.g., https://bbb.yourdomain.tld/"
+"bigbluebutton/"
+msgstr ""
+"Von \"bbb-conf --secret\" ausgegebene URL, z.B. https://bbb.yourdomain.tld/"
+"bigbluebutton/"
+
+#: vc_bbb/forms.py:29
+msgid "BBB Secret"
+msgstr "BBB API-Secret"
+
+#: vc_bbb/forms.py:30
+msgid "Secret returned by \"bbb-conf --secret\""
+msgstr "Von \"bbb-conf --secret\" ausgegebenes Secret"
+
+#: vc_bbb/forms.py:34
+msgid "Welcome message"
+msgstr "Willkommensnachricht"
+
+#: vc_bbb/forms.py:34
+#, python-format
+msgid ""
+"You can include keywords (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) which will "
+"be substituted automatically."
+msgstr ""
+"Sie können Platzhalter (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) verwende, welche "
+"automatisch substituiert werden."
+
+#: vc_bbb/forms.py:36
+msgid "Record"
+msgstr "Aufzeichnen"
+
+#: vc_bbb/forms.py:38
+msgid "Enable recordings (disable if need privacy)"
+msgstr "Aufzeichnung erlauben"
+
+#: vc_bbb/forms.py:40
+msgid "Start recordings"
+msgstr "Aufzeichnung starten"
+
+#: vc_bbb/forms.py:42
+msgid "Start session recording automatically"
+msgstr "Aufzeichnung automatisch starten"
+
+#: vc_bbb/forms.py:44
+msgid "Recording control"
+msgstr "Aufzeichnungssteuerung"
+
+#: vc_bbb/forms.py:46
+msgid "Enable moderator to start and pause recording"
+msgstr "Moderatoren können Aufzeichnung starten/pausieren"
+
+#: vc_bbb/forms.py:48
+msgid "Webcams to moderator only"
+msgstr "Webcams nur für Moderatoren"
+
+#: vc_bbb/forms.py:50
+msgid "Show webcams to moderator only"
+msgstr "Webcams werden nur Moderatoren angezeigt"
+
+#: vc_bbb/forms.py:52
+msgid "Mute on start"
+msgstr "Stummschaltung"
+
+#: vc_bbb/forms.py:54
+msgid "Mute all users on session start"
+msgstr "Alle Nutzer treten der Konferenz stummgeschaltet bei"
+
+#: vc_bbb/forms.py:56
+msgid "Allow unmute"
+msgstr "Stummschaltung aufhebbar"
+
+#: vc_bbb/forms.py:58
+msgid "Allow moderators to unmute users"
+msgstr "Moderatoren können Stummschaltung der Nutzer aufheben"
+
+#: vc_bbb/forms.py:60
+msgid "Lock disable cameras"
+msgstr "Sperre Webcams"
+
+#: vc_bbb/forms.py:62
+msgid "Prevent users from sharing their webcams"
+msgstr "Verbiete Nutzern das Teilen der Webcam"
+
+#: vc_bbb/forms.py:64
+msgid "Lock disable microphones"
+msgstr "Sperre Mikrofone"
+
+#: vc_bbb/forms.py:66
+msgid "Force users to join listen only"
+msgstr "Verbiete Nutzern die Nutzung des Mikrofons"
+
+#: vc_bbb/forms.py:68
+msgid "Lock disable private chats"
+msgstr "Sperre private Chats"
+
+#: vc_bbb/forms.py:70
+msgid "Disable private chats in the meeting"
+msgstr "Verbiete private Chats unter Nutzern"
+
+#: vc_bbb/forms.py:72
+msgid "Lock disable public chat"
+msgstr "Sperre öffentlichen Chat"
+
+#: vc_bbb/forms.py:74
+msgid "Disable public chat in the meeting"
+msgstr "Verbiete Nutzern im öffentlichen Chat zu schreiben"
+
+#: vc_bbb/forms.py:76
+msgid "Lock disable notes"
+msgstr "Sperre geteilte Notizen"
+
+#: vc_bbb/forms.py:78
+msgid "Disable notes in the meeting"
+msgstr "Verbiete Nutzern die geteilten Notizen zu nutzen"
+
+#: vc_bbb/forms.py:80
+msgid "Lock layout"
+msgstr "Sperre Layout"
+
+#: vc_bbb/forms.py:82
+msgid "Lock layout in the meeting"
+msgstr "Verbiete Nutzern das Layout einzustellen"
+
+#: vc_bbb/forms.py:84
+msgid "Guest policy"
+msgstr "Gastzugang"
+
+#: vc_bbb/forms.py:85
+msgid "Accept"
+msgstr "Erlauben"
+
+#: vc_bbb/forms.py:85
+msgid "Deny"
+msgstr "Verbieten"
+
+#: vc_bbb/forms.py:85
+msgid "Ask moderator"
+msgstr "Moderator fragen"
+
+#: vc_bbb/forms.py:105 vc_bbb/forms.py:123
+#: vc_bbb/templates/info_box.html:2
+#: vc_bbb/templates/manage_event_info_box.html:2
+msgid "Moderators"
+msgstr "Мoderatoren"
+
+#: vc_bbb/forms.py:141
+msgid "slides"
+msgstr "Folien"
+
+#: vc_bbb/templates/buttons.html:4
+msgid "Join"
+msgstr "Beitreten"
+
+#: vc_bbb/templates/buttons.html:11
+msgid "Start"
+msgstr "Starten"
+
+#: vc_bbb/templates/buttons.html:17
+#: vc_bbb/templates/buttons.html:19
+msgid "Manage presentations"
+msgstr "Präsentationen verwalten"
+
+#: vc_bbb/templates/buttons.html:27
+msgid "Manage recordings"
+msgstr "Aufzeichnungen verwalten"
+
+#: vc_bbb/templates/buttons.html:29
+msgid "Manage event recordings"
+msgstr "Aufzeichnungen des Events verwalten"
+
+#: vc_bbb/templates/event_buttons.html:10
+msgid "Meeting ended"
+msgstr "Konferenz beendet"
+
+#: vc_bbb/templates/event_buttons.html:17
+msgid "Meeting not started"
+msgstr "Konferenz noch nicht gestartet"
+
+#: vc_bbb/templates/event_buttons.html:25
+msgid "Event recordings"
+msgstr "Aufzeichnungen des Events"
+
+#: vc_bbb/templates/event_buttons.html:28
+#: vc_bbb/templates/manage_recordings.html:8
+msgid "Recordings"
+msgstr "Aufzeichnungen"
+
+#: vc_bbb/templates/info_box.html:5
+msgid "Status"
+msgstr "Status"
+
+#: vc_bbb/templates/info_box.html:8
+#: vc_bbb/templates/info_box.html:18
+#: vc_bbb/templates/info_box.html:29
+msgid "Start date"
+msgstr "Startzeitpunkt"
+
+#: vc_bbb/templates/info_box.html:10
+#: vc_bbb/templates/info_box.html:20
+#: vc_bbb/templates/info_box.html:31
+msgid "Duration"
+msgstr "Dauer"
+
+#: vc_bbb/templates/info_box.html:12
+#: vc_bbb/templates/info_box.html:22
+#: vc_bbb/templates/info_box.html:33
+msgid "End date"
+msgstr "Endzeitpunkt"
+
+#: vc_bbb/templates/list_recordings.html:6
+msgid "Date"
+msgstr "Datum"
+
+#: vc_bbb/templates/list_recordings.html:7
+msgid "Time"
+msgstr "Zeit"
+
+#: vc_bbb/templates/list_recordings.html:8
+msgid "Users"
+msgstr "Nutzer"
+
+#: vc_bbb/templates/list_recordings.html:9
+msgid "Preview"
+msgstr "Vorschau"
+
+#: vc_bbb/templates/list_recordings.html:10
+msgid "Link"
+msgstr "Link"
+
+#: vc_bbb/templates/manage_event_info_box.html:4
+msgid "Presentation"
+msgstr "Präsentation"
+
+#: vc_bbb/templates/manage_event_info_box.html:8
+msgid "bytes"
+msgstr "bytes"
+
+#: vc_bbb/templates/manage_event_info_box.html:12
+msgid "No files"
+msgstr "Keine Dateien"
+
+#: vc_bbb/templates/manage_event_info_box.html:14
+msgid "Room ID"
+msgstr "Raum ID"
+
+#: vc_bbb/templates/manage_event_info_box.html:16
+msgid "Internal ID"
+msgstr "Interne ID"
+
+#: vc_bbb/templates/manage_event_preload_slides.html:7
+msgid "Update"
+msgstr "Update"
+
+#: vc_bbb/templates/manage_recordings.html:21
+msgid "No recordings for this meeting"
+msgstr "Keine Aufzeichnungen für dieses Meeting"

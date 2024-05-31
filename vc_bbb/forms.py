@@ -137,7 +137,7 @@ class VCRoomAttachForm(VCRoomAttachFormBase):
         super(VCRoomAttachForm, self).__init__(*args, **kwargs)
 
 class VCRoomPreloadForm(IndicoForm):
-    slides = EditableFileField(_('slides'),  lightweight=True, 
+    slides = EditableFileField(_('Slides'),  lightweight=True, 
     get_metadata=get_slides_metadata, 
     multiple_files=True,
     # max_file_size=2,

@@ -190,7 +190,7 @@ msgid "Moderators"
 msgstr "Мoderatoren"
 
 #: vc_bbb/forms.py:141
-msgid "slides"
+msgid "Slides"
 msgstr "Folien"
 
 #: vc_bbb/templates/buttons.html:4
@@ -212,7 +212,7 @@ msgstr "Aufzeichnungen verwalten"
 
 #: vc_bbb/templates/buttons.html:29
 msgid "Manage event recordings"
-msgstr "Aufzeichnungen des Events verwalten"
+msgstr "Aufzeichnungen verwalten"
 
 #: vc_bbb/templates/event_buttons.html:10
 msgid "Meeting ended"

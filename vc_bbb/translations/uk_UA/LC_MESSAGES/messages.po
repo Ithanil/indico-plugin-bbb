@@ -196,7 +196,7 @@ msgid "Moderators"
 msgstr "Модератори"
 
 #: vc_bbb/forms.py:141
-msgid "slides"
+msgid "Slides"
 msgstr "Слайди"
 
 #: vc_bbb/templates/buttons.html:4

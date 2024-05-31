@@ -189,7 +189,7 @@ msgid "Moderators"
 msgstr ""
 
 #: vc_bbb/forms.py:141
-msgid "slides"
+msgid "Slides"
 msgstr ""
 
 #: vc_bbb/templates/buttons.html:4

@@ -24,7 +24,6 @@ from indico.web.forms.base import FormDefaults
 from indico.web.util import _pop_injected_js, jsonify_data, jsonify_template
 from indico.core.plugins import url_for_plugin
 from indico.web.flask.util import url_for
-from indico.util.i18n import _
 
 
 from indico.modules.auth.util import redirect_to_login
@@ -35,6 +34,7 @@ from indico.modules.vc.exceptions import VCRoomError
 from indico.modules.vc.models.vc_rooms import VCRoomEventAssociation
 
 from vc_bbb.api import get_create_meeting_url, get_join_url, is_meeting_running, get_recordings, get_delete_recording_url, set_publish_recording_url
+from vc_bbb import _
 
 class RHStartAndJoin(RHDisplayEventBase):
     def _process_args(self):

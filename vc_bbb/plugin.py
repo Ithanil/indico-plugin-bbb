@@ -27,8 +27,6 @@ from indico.web.forms.widgets import SwitchWidget
 from indico.web.forms.base import generated_data, FormDefaults
 from indico.web.forms.fields import IndicoPasswordField, PrincipalListField, FileField
 
-from indico.util.i18n import _
-
 from indico.modules.events.views import WPSimpleEventDisplay
 from indico.modules.vc.views import WPVCEventPage, WPVCManageEvent
 from indico.modules.vc.forms import VCRoomAttachFormBase, VCRoomFormBase
@@ -37,7 +35,7 @@ from vc_bbb.util import retrieve_principal
 from vc_bbb.api import is_meeting_running, get_recordings
 from vc_bbb.blueprint import blueprint
 from vc_bbb.forms import PluginSettingsForm, VCRoomForm, VCRoomAttachForm, VCRoomPreloadForm
-
+from vc_bbb import _
 
 class BigBlueButtonPlugin(VCPluginMixin, IndicoPlugin):
     """BigBlueButton

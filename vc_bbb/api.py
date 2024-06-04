@@ -12,6 +12,7 @@ from six.moves.urllib.parse import quote_plus
 import requests
 import xml.etree.ElementTree as ET
 from indico.web.flask.util import url_for
+from indico.web.util import url_for_index
 
 def get_url(command, params):
     from vc_bbb.plugin import BigBlueButtonPlugin
@@ -54,6 +55,7 @@ def get_create_meeting_url(vc_room, event_vc_room):
     event_room_params += '&lockSettingsLockOnJoin=' + 'true'
     event_room_params += '&guestPolicy=' + quote_plus(event_vc_room.data['guest_policy'])
     event_room_params += '&meta_bbb-origin=' + 'Indico'
+    event_room_params += '&meta_bbb-origin-server-name=' + url_for_index(_external = True)
 #    event_room_params += '&bannerText=' + quote_plus('Big Brother is watching!!!')
 #    event_room_params += '&bannerColor=' + quote_plus('#FF0000')
 

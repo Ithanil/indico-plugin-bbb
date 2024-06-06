@@ -123,7 +123,7 @@ class RHVCManageEventSlides(RHVCSystemEventBase):
                 slides_bytes.seek(0)
                 content = slides_bytes.read()
                 encoded_content = b64encode(content)
-                if len(encoded_content) > 2048000:
+                if len(encoded_content) > 1024000:
                     flash(_('File too large'), 'error')
                     return jsonify_data(flash=False)
                 size = len(content)

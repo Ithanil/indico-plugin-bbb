@@ -8,17 +8,18 @@
 
 from indico.core.plugins import IndicoPluginBlueprint
 
-from vc_bbb.controllers import RHStartAndJoin, RHVCManageEventSlides, RHVCManageEventRecordings, RHVCViewEventRecordings
+from vc_bbb.controllers import RHStartAndJoin, RHGuestJoin, RHVCManageEventSlides, RHVCManageEventRecordings, RHVCViewEventRecordings
 
 
 blueprint = IndicoPluginBlueprint('vc_bbb', 'vc_bbb')
 
 blueprint.add_url_rule('/event/<int:event_id>/videoconference/<any(bbb):service>/<int:event_vc_room_id>/start',
                        'start_and_join', RHStartAndJoin, methods=('POST', 'GET'))
+blueprint.add_url_rule('/event/<int:event_id>/videoconference/<any(bbb):service>/<int:event_vc_room_id>/guest_join',
+                       'guest_join', RHGuestJoin, methods=('POST', 'GET'))
 blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/slides',
                        'slides', RHVCManageEventSlides, methods=('POST', 'GET'))
 blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/recordings',
                        'recordings', RHVCManageEventRecordings)
 blueprint.add_url_rule('/event/<int:event_id>/manage/videoconference/<any(bbb):service>/<int:event_vc_room_id>/view_recordings',
                        'view_recordings', RHVCViewEventRecordings)
-

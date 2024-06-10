@@ -81,6 +81,17 @@ class RHStartAndJoin(RHDisplayEventBase):
             raise VCRoomError(_("Cannot create room"))
             return jsonify_data(flash=False)
 
+class RHGuestJoin(RHDisplayEventBase):
+    def _process_args(self):
+        self.event_vc_room = VCRoomEventAssociation.get(request.view_args['event_vc_room_id'])
+        self.vc_room = self.event_vc_room.vc_room
+        self.event = self.event_vc_room.event
+    def _process(self):
+        join_url = get_join_url(self.vc_room, False, 'Guest')
+        if is_meeting_running(self.vc_room):
+            return redirect(join_url)
+        return redirect(url_for('vc.event_videoconference', self.event))
+
 class RHVCManageEventSlides(RHVCSystemEventBase):
     """Preloads slides for an existing VC room"""
 

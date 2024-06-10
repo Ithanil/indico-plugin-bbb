@@ -1,9 +1,10 @@
 {% extends 'vc/event_buttons.html' %}
-{% from 'vc_bbb:buttons.html' import render_join_button, render_start_join_button   %}
+{% from 'vc_bbb:buttons.html' import render_join_button, render_guest_join_button, render_start_join_button   %}
 
 {% block buttons %}
     {% if is_running  %}
         {{ render_join_button(event_vc_room, "i-button icon-play event-service-right-button join-button") }}
+        {{ render_guest_join_button(event_vc_room, "i-button icon-play event-service-right-button guest-join-button") }}
     {% else %}
         {% if ended %}
             <span class="i-button event-service-right-button icon-disable">

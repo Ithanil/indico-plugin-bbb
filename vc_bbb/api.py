@@ -62,12 +62,15 @@ def get_create_meeting_url(vc_room, event_vc_room):
     request_data = room_params + event_room_params
     return get_url(command, request_data)
 
-def get_join_url(vc_room, is_moderator):
+def get_join_url(vc_room, is_moderator, name = ''):
     password = vc_room.data['attendee_password']
     if is_moderator:
         password = vc_room.data['moderator_password']
     command = 'join'
-    params = 'fullName=' + quote_plus(session.user.name.encode('utf-8'))
+    if name == '':
+        params = 'fullName=' + quote_plus(session.user.name.encode('utf-8'))
+    else:
+        params = 'fullName=' + quote_plus(name)
     params = params + '&meetingID=' + quote_plus(vc_room.data['room_id'])
     params = params + '&password=' + quote_plus(password)
     params = params + '&userdata-bbb_force_restore_presentation_on_new_events=true'
@@ -120,5 +123,3 @@ def get_delete_recording_url(id):
     command = 'deleteRecordings'
     params = 'recordID=' + id
     return get_url(command, params)
-
-
